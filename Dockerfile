@@ -1,4 +1,4 @@
-FROM asuforce/puppetserver
+FROM asuforce/puppet
 MAINTAINER Shun Nishitsuji <shun.nishitsuji@pepabo.com>
 
 RUN apt-get update \
