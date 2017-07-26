@@ -1,5 +1,4 @@
 FROM asuforce/puppet
-MAINTAINER Shun Nishitsuji <shun.nishitsuji@pepabo.com>
 
 RUN apt-get update \
   && apt-get -yqq install puppetserver=5.0.0-1puppetlabs1 \
