@@ -1,8 +1,8 @@
 FROM asuforce/puppet
 
-RUN apt-get update -qq \
-  && apt-get -qq install puppetserver=5.0.0-1puppetlabs1 \
-  && apt-get clean \
+RUN apt update \
+  && apt install -y puppetserver=5.3.1-1xenial \
+  && apt clean \
   && rm -rf /var/lib/apt/lists/*
 
 COPY puppetserver /etc/default/puppetserver
