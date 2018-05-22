@@ -1,7 +1,7 @@
 FROM asuforce/puppet
 
 RUN apt update \
-  && apt install -y puppetserver=5.0.0-1puppetlabs1 \
+  && apt install -y puppetserver=5.3.1-1xenial \
   && apt clean \
   && rm -rf /var/lib/apt/lists/*
 
